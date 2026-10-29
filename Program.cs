@@ -5,25 +5,24 @@ namespace c1
     {
         static void Main()
         {
-            int number = int.Parse(Console.ReadLine());
-            switch (number)
-            {
-                case 1:
-                Console.WriteLine("Привет!");
-                break;
-                
-                case 2:
-                Console.WriteLine("Пока!");
-                break;
-        
-                case 3:
-                Console.WriteLine("я изучаю C#");
-                break;
-                
-                default:
-                Console.WriteLine("неизвестная команда");
-                break;
-            }
+        Console.WriteLine("Введите первое число: ");
+int a = int.Parse(Console.ReadLine());
+
+Console.WriteLine("Введите второе число: ");
+int b = int.Parse(Console.ReadLine());
+
+if (a > b)
+{
+    Console.WriteLine("Первое число больше второго!");
+}
+else if (a == b)
+{
+    Console.WriteLine("Оба числа равны!");
+}
+else
+{
+    Console.WriteLine("ой, косяк попробуйте снова!");
+}
 
         }
     }
